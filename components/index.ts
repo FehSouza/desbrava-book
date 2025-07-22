@@ -1,2 +1,3 @@
-export * from './SplashScreenController';
+export * from './shared'
+export * from './SplashScreenController'
 
