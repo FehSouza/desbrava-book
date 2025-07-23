@@ -1,2 +1,3 @@
-export * from './TouchableOpacityCustom';
+export * from './TouchableOpacityCustom'
+export * from './TouchableOpacityIcon'
 
