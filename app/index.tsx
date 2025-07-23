@@ -1,4 +1,4 @@
-import { Button } from '@/components'
+import { TouchableOpacityCustom } from '@/components'
 import { theme } from '@/theme'
 import { Text, View } from 'react-native'
 
@@ -12,21 +12,21 @@ export default function Index() {
         backgroundColor: theme.colors.background,
       }}
     >
-      <Button>
+      <TouchableOpacityCustom>
         <Text style={{ color: theme.colors.onPrimary }}>Hello World</Text>
-      </Button>
+      </TouchableOpacityCustom>
 
-      <Button disabled>
+      <TouchableOpacityCustom disabled>
         <Text style={{ color: theme.colors.onPrimary }}>Hello World</Text>
-      </Button>
+      </TouchableOpacityCustom>
 
-      <Button variant="secondary">
+      <TouchableOpacityCustom variant="secondary">
         <Text style={{ color: theme.colors.primary }}>Hello World</Text>
-      </Button>
+      </TouchableOpacityCustom>
 
-      <Button variant="secondary" disabled>
+      <TouchableOpacityCustom variant="secondary" disabled>
         <Text style={{ color: theme.colors.primary }}>Hello World</Text>
-      </Button>
+      </TouchableOpacityCustom>
     </View>
   )
 }

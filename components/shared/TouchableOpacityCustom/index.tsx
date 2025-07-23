@@ -1,12 +1,12 @@
 import { theme } from '@/theme'
 import { StyleSheet, TouchableOpacity, TouchableOpacityProps } from 'react-native'
 
-interface ButtonProps extends TouchableOpacityProps {
+interface TouchableOpacityCustomProps extends TouchableOpacityProps {
   children: React.ReactNode
   variant?: 'primary' | 'secondary'
 }
 
-export const Button = ({ children, variant = 'primary', ...props }: ButtonProps) => {
+export const TouchableOpacityCustom = ({ children, variant = 'primary', ...props }: TouchableOpacityCustomProps) => {
   const buttonStyles = [styles.button_base, styles[`button_${variant}`], props.disabled && styles.disabled]
 
   return (
